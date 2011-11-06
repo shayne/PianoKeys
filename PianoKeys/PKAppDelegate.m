@@ -99,6 +99,10 @@
         }
     }
     
+    if (procCount > 0) {
+        free(procList);
+    }
+    
     if (!pianobarFound) {
         [NSApp terminate:self];
     }
