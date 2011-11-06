@@ -27,8 +27,6 @@
 #pragma mark - NSObject
 
 - (void)dealloc {
-    [processCheckTimer_ invalidate];
-    
     [keyTap_ release];
     [pianobarController_ release];
     
@@ -56,6 +54,11 @@
                                                         userInfo:nil
                                                          repeats:YES];
 #endif
+}
+
+
+- (void)applicationWillTerminate:(NSNotification *)notification {
+    [processCheckTimer_ invalidate];
 }
 
 
