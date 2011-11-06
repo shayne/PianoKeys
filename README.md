@@ -13,6 +13,11 @@ media keys on my Mac, so I wrote an app that does it.
 * Hold the fast forward key to "ban" a track
 * PianoKeys will automatically terminate after Pianobar closes
 
+## Building
+
+You should be able to just open the Xcode project and build. I developed the
+app using Xcode 4.2.
+
 ## Installation
 
 The installation requires a few steps, but it's pretty easy to get
@@ -26,7 +31,13 @@ up and running, here's what you need to do:
 
         mkfifo /Users/USERNAME/.config/pianobar/ctl
 
-3. Copy the `pianokeys` binary into your $PATH (e.g. `/usr/local/bin`)
+3. **If you have Xcode:** Install the application using Xcode from terminal
+
+        # From the project root directory
+        xcodebuild -configuration Release install  # installs into /usr/local/bin
+
+3. **If you downloaded the binary:** Copy the `pianokeys` binary into your $PATH
+(e.g. `/usr/local/bin`)
 
         cp ./pianokeys /usr/local/bin
 
