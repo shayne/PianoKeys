@@ -1,0 +1,14 @@
+
+// Control daemonization and auto exit
+#ifdef DEBUG
+//    #define DEBUG_SEND
+//    #define DAEMONIZE
+//    #define AUTO_EXIT
+#else
+    #define DAEMONIZE
+    #define AUTO_EXIT
+#endif
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

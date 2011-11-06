@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26F329E1146631E0006DE6D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F329E0146631E0006DE6D6 /* main.m */; };
+		26F329EE14663261006DE6D6 /* GetBSDProcessList.c in Sources */ = {isa = PBXBuildFile; fileRef = 26F329EB14663261006DE6D6 /* GetBSDProcessList.c */; };
+		26F329FA1466326D006DE6D6 /* PKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F329EF1466326D006DE6D6 /* PKAppDelegate.m */; };
+		26F329FB1466326D006DE6D6 /* PKApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F329F11466326D006DE6D6 /* PKApplication.m */; };
+		26F329FC1466326D006DE6D6 /* PKPianobarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F329F31466326D006DE6D6 /* PKPianobarController.m */; };
+		26F329FD1466326D006DE6D6 /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F329F61466326D006DE6D6 /* NSObject+SPInvocationGrabbing.m */; };
+		26F329FE1466326D006DE6D6 /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F329F91466326D006DE6D6 /* SPMediaKeyTap.m */; };
+		26F32A001466340E006DE6D6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F329FF1466340E006DE6D6 /* Carbon.framework */; };
+		26F32A0214663412006DE6D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F32A0114663412006DE6D6 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26F329D9146631E0006DE6D6 /* pianokeys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pianokeys; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F329E0146631E0006DE6D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26F329E3146631E0006DE6D6 /* PianoKeys-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PianoKeys-Prefix.pch"; sourceTree = "<group>"; };
+		26F329EB14663261006DE6D6 /* GetBSDProcessList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GetBSDProcessList.c; sourceTree = "<group>"; };
+		26F329EC14663261006DE6D6 /* GetBSDProcessList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetBSDProcessList.h; sourceTree = "<group>"; };
+		26F329ED14663261006DE6D6 /* PKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAppDelegate.h; sourceTree = "<group>"; };
+		26F329EF1466326D006DE6D6 /* PKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKAppDelegate.m; sourceTree = "<group>"; };
+		26F329F01466326D006DE6D6 /* PKApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKApplication.h; sourceTree = "<group>"; };
+		26F329F11466326D006DE6D6 /* PKApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKApplication.m; sourceTree = "<group>"; };
+		26F329F21466326D006DE6D6 /* PKPianobarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKPianobarController.h; sourceTree = "<group>"; };
+		26F329F31466326D006DE6D6 /* PKPianobarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKPianobarController.m; sourceTree = "<group>"; };
+		26F329F51466326D006DE6D6 /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
+		26F329F61466326D006DE6D6 /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
+		26F329F81466326D006DE6D6 /* SPMediaKeyTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMediaKeyTap.h; sourceTree = "<group>"; };
+		26F329F91466326D006DE6D6 /* SPMediaKeyTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMediaKeyTap.m; sourceTree = "<group>"; };
+		26F329FF1466340E006DE6D6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		26F32A0114663412006DE6D6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26F329D6146631E0006DE6D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F32A0214663412006DE6D6 /* Cocoa.framework in Frameworks */,
+				26F32A001466340E006DE6D6 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26F329CE146631E0006DE6D6 = {
+			isa = PBXGroup;
+			children = (
+				26F329DF146631E0006DE6D6 /* PianoKeys */,
+				26F329DC146631E0006DE6D6 /* Frameworks */,
+				26F329DA146631E0006DE6D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26F329DA146631E0006DE6D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26F329D9146631E0006DE6D6 /* pianokeys */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26F329DC146631E0006DE6D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26F32A0114663412006DE6D6 /* Cocoa.framework */,
+				26F329FF1466340E006DE6D6 /* Carbon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26F329DF146631E0006DE6D6 /* PianoKeys */ = {
+			isa = PBXGroup;
+			children = (
+				26F329F41466326D006DE6D6 /* SPInvocationGrabbing */,
+				26F329F71466326D006DE6D6 /* SPMediaKey */,
+				26F329ED14663261006DE6D6 /* PKAppDelegate.h */,
+				26F329EF1466326D006DE6D6 /* PKAppDelegate.m */,
+				26F329F01466326D006DE6D6 /* PKApplication.h */,
+				26F329F11466326D006DE6D6 /* PKApplication.m */,
+				26F329F21466326D006DE6D6 /* PKPianobarController.h */,
+				26F329F31466326D006DE6D6 /* PKPianobarController.m */,
+				26F329EB14663261006DE6D6 /* GetBSDProcessList.c */,
+				26F329EC14663261006DE6D6 /* GetBSDProcessList.h */,
+				26F329E0146631E0006DE6D6 /* main.m */,
+				26F329E2146631E0006DE6D6 /* Supporting Files */,
+			);
+			path = PianoKeys;
+			sourceTree = "<group>";
+		};
+		26F329E2146631E0006DE6D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26F329E3146631E0006DE6D6 /* PianoKeys-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26F329F41466326D006DE6D6 /* SPInvocationGrabbing */ = {
+			isa = PBXGroup;
+			children = (
+				26F329F51466326D006DE6D6 /* NSObject+SPInvocationGrabbing.h */,
+				26F329F61466326D006DE6D6 /* NSObject+SPInvocationGrabbing.m */,
+			);
+			path = SPInvocationGrabbing;
+			sourceTree = "<group>";
+		};
+		26F329F71466326D006DE6D6 /* SPMediaKey */ = {
+			isa = PBXGroup;
+			children = (
+				26F329F81466326D006DE6D6 /* SPMediaKeyTap.h */,
+				26F329F91466326D006DE6D6 /* SPMediaKeyTap.m */,
+			);
+			path = SPMediaKey;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26F329D8146631E0006DE6D6 /* pianokeys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F329E8146631E0006DE6D6 /* Build configuration list for PBXNativeTarget "pianokeys" */;
+			buildPhases = (
+				26F329D5146631E0006DE6D6 /* Sources */,
+				26F329D6146631E0006DE6D6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pianokeys;
+			productName = PianoKeys;
+			productReference = 26F329D9146631E0006DE6D6 /* pianokeys */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26F329D0146631E0006DE6D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Shayne Sweeney";
+			};
+			buildConfigurationList = 26F329D3146631E0006DE6D6 /* Build configuration list for PBXProject "PianoKeys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26F329CE146631E0006DE6D6;
+			productRefGroup = 26F329DA146631E0006DE6D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26F329D8146631E0006DE6D6 /* pianokeys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26F329D5146631E0006DE6D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F329E1146631E0006DE6D6 /* main.m in Sources */,
+				26F329EE14663261006DE6D6 /* GetBSDProcessList.c in Sources */,
+				26F329FA1466326D006DE6D6 /* PKAppDelegate.m in Sources */,
+				26F329FB1466326D006DE6D6 /* PKApplication.m in Sources */,
+				26F329FC1466326D006DE6D6 /* PKPianobarController.m in Sources */,
+				26F329FD1466326D006DE6D6 /* NSObject+SPInvocationGrabbing.m in Sources */,
+				26F329FE1466326D006DE6D6 /* SPMediaKeyTap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26F329E6146631E0006DE6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		26F329E7146631E0006DE6D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		26F329E9146631E0006DE6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PianoKeys/PianoKeys-Prefix.pch";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26F329EA146631E0006DE6D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PianoKeys/PianoKeys-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26F329D3146631E0006DE6D6 /* Build configuration list for PBXProject "PianoKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F329E6146631E0006DE6D6 /* Debug */,
+				26F329E7146631E0006DE6D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F329E8146631E0006DE6D6 /* Build configuration list for PBXNativeTarget "pianokeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F329E9146631E0006DE6D6 /* Debug */,
+				26F329EA146631E0006DE6D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26F329D0146631E0006DE6D6 /* Project object */;
+}

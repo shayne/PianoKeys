@@ -1,0 +1,4 @@
+
+@interface PKApplication : NSApplication
+
+@end
