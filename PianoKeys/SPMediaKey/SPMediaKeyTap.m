@@ -25,7 +25,8 @@ static CGEventRef tapEventCallback(CGEventTapProxy proxy, CGEventType type, CGEv
 -(id)initWithDelegate:(id)delegate;
 {
 	_delegate = delegate;
-	[self startWatchingAppSwitching];
+    // This was leaking memory like a sieve
+	// [self startWatchingAppSwitching];
 	singleton = self;
 	_mediaKeyAppList = [NSMutableArray new];
 	return self;
