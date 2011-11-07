@@ -2,7 +2,7 @@
 #import <IOKit/hidsystem/ev_keymap.h>
 
 #import "PKPianobarController.h"
-
+#import "BezelWindow.h"
 
 @interface PKPianobarController ()
 
@@ -21,6 +21,11 @@
 
 
 #define DELAY_INTERVAL 0.3
+
+#define COMMAND_PLAY @"p"
+#define COMMAND_FAST @"n"
+#define COMMAND_LOVE @"+"
+#define COMMAND_BAN @"-"
 
 
 @implementation PKPianobarController {
@@ -42,11 +47,11 @@
     
     switch (keyCode) {
         case NX_KEYTYPE_PLAY:
-            [self sendDelayedCommand:@"+"];
+            [self sendDelayedCommand:COMMAND_LOVE];
             break;
             
         case NX_KEYTYPE_FAST:
-            [self sendDelayedCommand:@"-"];
+            [self sendDelayedCommand:COMMAND_BAN];
             break;
             
         case NX_KEYTYPE_REWIND:
@@ -77,11 +82,11 @@
     
     switch (keyCode) {
         case NX_KEYTYPE_PLAY:
-            [self sendCommand:@"p"];
+            [self sendCommand:COMMAND_PLAY];
             break;
         
         case NX_KEYTYPE_FAST:
-            [self sendCommand:@"n"];
+            [self sendCommand:COMMAND_FAST];
             break;
         
         case NX_KEYTYPE_REWIND:
@@ -94,6 +99,22 @@
 #pragma mark Private methods
 
 - (void)sendCommand:(NSString *)command {
+    NSString *flashText = nil;
+    
+    if ([command isEqualToString:COMMAND_PLAY]) {
+        flashText = @"👂";
+    } else if ([command isEqualToString:COMMAND_FAST]) {
+        flashText = @"👉";
+    } else if ([command isEqualToString:COMMAND_LOVE]) {
+        flashText = @"👍";
+    } else if ([command isEqualToString:COMMAND_BAN]) {
+        flashText = @"👎";
+    }
+    
+    if (flashText) {
+        [BezelWindow flashText:flashText];
+    }
+    
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
     
     if ([self isPendingDelayedCommand]) {

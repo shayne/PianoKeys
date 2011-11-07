@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261543901467B1E40005F718 /* BezelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2615438D1467B1E40005F718 /* BezelView.m */; };
+		261543911467B1E40005F718 /* BezelWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2615438F1467B1E40005F718 /* BezelWindow.m */; };
+		261543961467C05B0005F718 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261543951467C05B0005F718 /* QuartzCore.framework */; };
 		26F329E1146631E0006DE6D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F329E0146631E0006DE6D6 /* main.m */; };
 		26F329EE14663261006DE6D6 /* GetBSDProcessList.c in Sources */ = {isa = PBXBuildFile; fileRef = 26F329EB14663261006DE6D6 /* GetBSDProcessList.c */; };
 		26F329FA1466326D006DE6D6 /* PKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F329EF1466326D006DE6D6 /* PKAppDelegate.m */; };
@@ -19,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2615438C1467B1E40005F718 /* BezelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezelView.h; sourceTree = "<group>"; };
+		2615438D1467B1E40005F718 /* BezelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezelView.m; sourceTree = "<group>"; };
+		2615438E1467B1E40005F718 /* BezelWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezelWindow.h; sourceTree = "<group>"; };
+		2615438F1467B1E40005F718 /* BezelWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezelWindow.m; sourceTree = "<group>"; };
+		261543951467C05B0005F718 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		26F329D9146631E0006DE6D6 /* pianokeys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pianokeys; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F329E0146631E0006DE6D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26F329E3146631E0006DE6D6 /* PianoKeys-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PianoKeys-Prefix.pch"; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261543961467C05B0005F718 /* QuartzCore.framework in Frameworks */,
 				26F32A0214663412006DE6D6 /* Cocoa.framework in Frameworks */,
 				26F32A001466340E006DE6D6 /* Carbon.framework in Frameworks */,
 			);
@@ -71,6 +80,7 @@
 		26F329DC146631E0006DE6D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				261543951467C05B0005F718 /* QuartzCore.framework */,
 				26F32A0114663412006DE6D6 /* Cocoa.framework */,
 				26F329FF1466340E006DE6D6 /* Carbon.framework */,
 			);
@@ -90,6 +100,10 @@
 				26F329F31466326D006DE6D6 /* PKPianobarController.m */,
 				26F329EB14663261006DE6D6 /* GetBSDProcessList.c */,
 				26F329EC14663261006DE6D6 /* GetBSDProcessList.h */,
+				2615438C1467B1E40005F718 /* BezelView.h */,
+				2615438D1467B1E40005F718 /* BezelView.m */,
+				2615438E1467B1E40005F718 /* BezelWindow.h */,
+				2615438F1467B1E40005F718 /* BezelWindow.m */,
 				26F329E0146631E0006DE6D6 /* main.m */,
 				26F329E2146631E0006DE6D6 /* Supporting Files */,
 			);
@@ -179,6 +193,8 @@
 				26F329FC1466326D006DE6D6 /* PKPianobarController.m in Sources */,
 				26F329FD1466326D006DE6D6 /* NSObject+SPInvocationGrabbing.m in Sources */,
 				26F329FE1466326D006DE6D6 /* SPMediaKeyTap.m in Sources */,
+				261543901467B1E40005F718 /* BezelView.m in Sources */,
+				261543911467B1E40005F718 /* BezelWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
