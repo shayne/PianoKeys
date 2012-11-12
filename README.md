@@ -34,7 +34,7 @@ up and running, here's what you need to do:
 3. **If you have Xcode:** Install the application using Xcode from terminal
 
         # From the project root directory
-        xcodebuild -configuration Release install  # installs into /usr/local/bin
+        sudo xcodebuild -configuration Release install  # installs into /usr/local/bin
 
 3. **If you downloaded the binary:** Copy the `pianokeys` binary into your $PATH
 (e.g. `/usr/local/bin`)
