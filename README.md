@@ -29,7 +29,7 @@ up and running, here's what you need to do:
 
 2. Create the file pipe
 
-        mkfifo /Users/USERNAME/.config/pianobar/ctl
+        mkfifo /Users/$USER/.config/pianobar/ctl
 
 3. **If you have Xcode:** Install the application using Xcode from terminal
 
