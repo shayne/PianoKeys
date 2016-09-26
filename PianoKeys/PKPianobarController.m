@@ -49,12 +49,14 @@
         case NX_KEYTYPE_PLAY:
             [self sendDelayedCommand:COMMAND_LOVE];
             break;
-            
+
         case NX_KEYTYPE_FAST:
+        case NX_KEYTYPE_NEXT:
             [self sendDelayedCommand:COMMAND_BAN];
             break;
-            
+
         case NX_KEYTYPE_REWIND:
+        case NX_KEYTYPE_PREVIOUS:
         default:
             break;
     }
@@ -86,10 +88,12 @@
             break;
         
         case NX_KEYTYPE_FAST:
+        case NX_KEYTYPE_NEXT:
             [self sendCommand:COMMAND_FAST];
             break;
         
         case NX_KEYTYPE_REWIND:
+        case NX_KEYTYPE_PREVIOUS:
         default:
             break;
     }
@@ -151,6 +155,8 @@
 - (BOOL)shouldHandleMediaKey:(int)keyCode {
     switch (keyCode) {
         case NX_KEYTYPE_PLAY:
+        case NX_KEYTYPE_NEXT:
+        case NX_KEYTYPE_PREVIOUS:
         case NX_KEYTYPE_FAST:
         case NX_KEYTYPE_REWIND:
             return YES;
